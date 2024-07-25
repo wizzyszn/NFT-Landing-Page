@@ -10,7 +10,7 @@ export default function Collections () {
     <div className='  mt-[10%]'>
       <h1 className=' text-center text-4xl'>TRENDING NFT COLLECTION</h1>
       <div className=' flex flex-col gap-4'>
-        <div className=' flex justify-center gap-8 mt-7'>
+        <div className=' flex justify-center gap-8 mt-7 max-sm:flex-wrap '>
           {buttonCard.map((elem, index) => {
             return (
               <button
@@ -24,8 +24,8 @@ export default function Collections () {
         </div>
         <CollectionCards />
       </div>
-      <div className=' grid grid-cols-2 mt-9 items-center justify-items-center'>
-        <div className=' flex flex-col gap-4 w-[60%]'>
+      <div className=' grid grid-cols-2 mt-9 items-center justify-items-center max-sm:flex max-sm:flex-col-reverse'>
+        <div className=' flex flex-col gap-4 w-[60%] max-sm:w-full max-sm:items-center max-sm:text-center'>
           <h1 className=' text-5xl'>HOW TO SELL AND BUY YOUR NFTS</h1>
           <p className=' TT tracking-tight'>
             Buy Your NFTs, Trade until the bergins. Take on the role of the

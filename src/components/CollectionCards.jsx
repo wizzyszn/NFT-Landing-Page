@@ -28,7 +28,7 @@ const data = [
 ]
 export default function CollectionCards() {
   return (
-    <div className=' flex justify-center gap-7'>
+    <div className=' flex justify-center gap-7 max-sm:flex-col'>
         {
          data.map((elem,index) =>{
             return <div key={index} className=' flex flex-col gap-2 items-center'>

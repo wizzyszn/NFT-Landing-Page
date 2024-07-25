@@ -30,9 +30,9 @@ const data = [
 ]
 export default function Artists () {
   return (
-    <div className=' flex flex-col gap-9'>
+    <div className=' flex flex-col gap-9 max-sm:mt-12'>
       <h1 className=' text-center text-5xl'>FIND THE TOP NFT ARTIST</h1>
-      <div className=' w-[20%] m-auto p-1 flex gap-1  bg-[#FFAC03] rounded-md'>
+      <div className=' w-[20%] m-auto p-1 flex gap-1  bg-[#FFAC03] rounded-md max-sm:w-full'>
         <button className=' text-[#FFAC03] p-4 bg-[#060C03] flex-1 rounded-md'>
           POPULAR
         </button>
@@ -40,7 +40,7 @@ export default function Artists () {
           fOLLOWING
         </button>
       </div>
-      <div className=' flex gap-8 justify-center'>
+      <div className=' flex gap-8 justify-center max-sm:flex-wrap'>
         {data.map((elem, index) => {
           return (
             <div key={index} className=' flex flex-col items-center gap-3'>
